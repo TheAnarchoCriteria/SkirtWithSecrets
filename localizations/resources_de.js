@@ -50,6 +50,6 @@ const resources_de = {
   },
   contactSuccess: "E-Mail erfolgreich gesendet!",
   contactError: "Fehler beim Senden der E-Mail. Bitte versuchen Sie es erneut.",
-  welcomeMessage: "Willkommen bei ManifestoHighTechWear"
+  welcomeMessage: "Willkommen bei The Anarcho Criteria"
 
 };

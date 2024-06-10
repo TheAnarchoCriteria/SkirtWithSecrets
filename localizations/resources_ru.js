@@ -50,6 +50,6 @@ const resources_ru = {
   },
   contactSuccess: "Письмо успешно отправлено!",
   contactError: "Ошибка при отправке письма. Попробуйте еще раз.",
-  welcomeMessage: "Добро пожаловать в ManifestoHighTechWear"
+  welcomeMessage: "Добро пожаловать в The Anarcho Criteria"
 
 };

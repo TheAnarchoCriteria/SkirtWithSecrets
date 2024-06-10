@@ -50,5 +50,5 @@ const resources_ca = {
   },
   contactSuccess: "Correu enviat amb èxit!",
   contactError: "Error en enviar el correu. Torna-ho a intentar.",
-  welcomeMessage: "Benvingut a ManifestoHighTechWear"
+  welcomeMessage: "Benvingut a The Anarcho Criteria"
 };

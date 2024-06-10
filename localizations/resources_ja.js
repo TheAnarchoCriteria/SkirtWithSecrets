@@ -50,6 +50,6 @@ const resources_ja = {
   },
   contactSuccess: "メールが正常に送信されました！",
   contactError: "メールの送信中にエラーが発生しました。もう一度お試しください。",
-  welcomeMessage: "ManifestoHighTechWearへようこそ"
+  welcomeMessage: "アナーコクリテリアへようこそ"
 
 };

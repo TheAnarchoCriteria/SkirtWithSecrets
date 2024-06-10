@@ -50,6 +50,6 @@ const resources_ko = {
   },
   contactSuccess: "이메일이 성공적으로 전송되었습니다!",
   contactError: "이메일 전송 중 오류가 발생했습니다. 다시 시도해주세요.",
-  welcomeMessage: "ManifestoHighTechWear에 오신 것을 환영합니다"
+  welcomeMessage: "아나코 크리테리아에 오신 것을 환영합니다"
 
 };

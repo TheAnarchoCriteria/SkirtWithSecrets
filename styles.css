@@ -40,8 +40,8 @@ body {
   display: block;
   max-width: 100%; /* Ajustar el ancho de la imagen para móviles */
   height: auto;
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.2), 0 6px 20px rgba(192, 192, 192, 0.19); /* Sombra plateada */
+  /*border-radius: 15px; /* Bordes redondeados */
+  /*box-shadow: 0 4px 8px rgba(192, 192, 192, 0.2), 0 6px 20px rgba(192, 192, 192, 0.19); /* Sombra plateada */
   margin-bottom: 20px;
 }
 .menu {

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle"></title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="localizations/resources_en.js"></script>
+  <script src="localizations/resources_es.js"></script>
+  <script src="localizations/resources_fr.js"></script>
+  <script src="localizations/resources_de.js"></script>
+  <script src="localizations/resources_ca.js"></script>
+  <script src="localizations/resources_ru.js"></script>
+  <script src="localizations/resources_ja.js"></script>
+  <script src="localizations/resources_ko.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="welcome-popup" class="popup-overlay" style="display: flex;">
+    <div class="popup">
+      <h2 id="welcome-message">Welcome to ManifestoHighTechWear</h2>
+      <p>Please select your language</p>
+      <div class="language-select">
+        <select id="language-select">
+          <option value="en">🇬🇧 English</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="ca">🇪🇸 Català</option>
+          <option value="ru">🇷🇺 Русский</option>
+          <option value="ja">🇯🇵 日本語</option>
+          <option value="ko">🇰🇷 한국어</option>
+        </select>
+      </div>
+      <button id="confirm-language-button" onclick="closeWelcomePopup()">Confirm</button>
+    </div>
+  </div>
+
+  <img class="logo" src="logo/logo.jpeg" alt="">
+  <div class="product-name"></div>
+  <img class="image" src="images/image.gif" alt="">
+  <div class="menu">
+    <div onclick="showSection('info1')" id="menu1" class="active"></div>
+    <div onclick="showSection('info2')" id="menu2"></div>
+    <div onclick="showSection('info3')" id="menu3"></div>
+    <div onclick="showSection('info4')" id="menu4"></div>
+    <div onclick="showSection('info5')" id="menu5"></div>
+    <button class="contact-button" onclick="toggleContactForm()"></button>
+  </div>
+  <div class="section-content" id="info1"></div>
+  <div class="section-content" id="info2"></div>
+  <div class="section-content" id="info3"></div>
+  <div class="section-content" id="info4"></div>
+  <div class="section-content" id="info5"></div>
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
+        <input type="email" id="email" placeholder="" required>
+        <textarea id="message" placeholder="" rows="4" required></textarea>
+        <div>
+          <button type="submit"></button>
+          <button type="button" class="cancel" onclick="toggleContactForm()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'CalistRegular';
+  src: url('fonts/CALIST.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'CalistBold';
+  src: url('fonts/CALISTB.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'GraciaRough';
+  src: url('fonts/GraciaASW01-No45Rough.otf') format('opentype');
+}
+
+body {
+  font-family: 'CalistRegular', 'Courier New', Courier, monospace;
+  background: linear-gradient(180deg, #000000, #333333, #ffffff); /* Fondo degradado de negro a blanco */
+  color: #ffffff; /* Texto blanco */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-y: auto; /* Habilitar scroll vertical */
+}
+.logo {
+  max-width: 100px; /* Tamaño máximo del logo */
+  margin: 20px 0; /* Espacio entre el logo y el nombre del producto */
+}
+.product-name {
+  font-family: 'GraciaRough';
+  font-size: 2.5em; /* Tamaño de fuente ajustado para dispositivos móviles */
+  margin: 10px 0; /* Espacio entre el logo y el nombre del producto */
+  line-height: 1.2;
+  text-align: center;
+  color: #c0c0c0; /* Color plateado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+.image {
+  display: block;
+  max-width: 100%; /* Ajustar el ancho de la imagen para móviles */
+  height: auto;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.2), 0 6px 20px rgba(192, 192, 192, 0.19); /* Sombra plateada */
+  margin-bottom: 20px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 10px; /* Espacio entre los botones */
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.menu div,
+.menu button {
+  cursor: pointer;
+  padding: 12px; /* Ajustar padding para el tamaño del botón */
+  font-family: 'CalistBold', Monaco, monospace;
+  font-size: 1.2em; /* Ajustar tamaño de fuente para el botón */
+  text-align: center; /* Centrar el texto */
+  border-radius: 10px; /* Bordes redondeados */
+  box-sizing: border-box; /* Asegurar que el padding esté incluido en el tamaño del botón */
+  border: 2px solid #c0c0c0; /* Borde plateado */
+  background: linear-gradient(145deg, #000000, #333333); /* Fondo degradado negro a gris */
+  color: #ffffff;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+.menu div:hover,
+.menu button:hover {
+  background: #c0c0c0; /* Fondo plateado al pasar el mouse */
+  color: #000000; /* Texto negro al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.5); /* Sombra plateada al pasar el mouse */
+}
+.menu div.active {
+  background: #c0c0c0; /* Fondo plateado para el activo */
+  color: #000000; /* Texto negro para el activo */
+}
+.section-content {
+  display: none;
+  padding: 15px 25px; /* Ajustar padding para reducir margen superior */
+  text-align: center; /* Centrar el texto */
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  color: #000000; /* Texto negro */
+  border-radius: 15px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir padding en el tamaño del contenedor */
+  height: 220px; /* Altura fija */
+  overflow-wrap: break-word; /* Ajustar texto al contenedor */
+  overflow: hidden; /* Evitar desbordamiento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  margin-bottom: 20px; /* Espacio entre el contenido y el siguiente elemento */
+}
+.section-content p {
+  margin: 8px 0; /* Reducir margen superior e inferior de los párrafos */
+  line-height: 1.4; /* Reducir distancia entre líneas */
+}
+.section-content.active {
+  display: flex;
+}
+.popup-overlay {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup {
+  background: linear-gradient(180deg, #000000, #333333); /* Fondo degradado negro a gris */
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+.popup h2 {
+  font-family: 'CalistBold', Monaco, monospace;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #c0c0c0; /* Color plateado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+.popup p {
+  margin-bottom: 20px;
+  color: #c0c0c0; /* Color plateado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+.popup input,
+.popup textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #000000;
+  color: #ffffff;
+}
+.popup button {
+  background-color: #c0c0c0;
+  color: #000000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+.popup button:hover {
+  background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+  color: #000000; /* Texto negro al pasar el mouse */
+}
+.popup button.cancel {
+  background-color: #ff0000; /* Rojo para el botón de cancelar */
+}
+.language-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.language-select img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

@@ -1,7 +1,7 @@
 const resources_ko = {
   pageTitle: "Manifesto",
   logoAlt: "브랜드 로고",
-  productName: "비밀이 있는 치마",
+   productName: "Skirt With Secrets",
   imageAlt: "항목 사진",
   menuItems: [
     "제품 코드",

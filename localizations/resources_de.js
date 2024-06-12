@@ -1,7 +1,7 @@
 const resources_de = {
   pageTitle: "Manifesto",
   logoAlt: "Logo der Marke",
-  productName: "Rock Mit Geheimnissen",
+  productName: "Skirt With Secrets",
   imageAlt: "Foto des Artikels",
   menuItems: [
     "Produktcode",

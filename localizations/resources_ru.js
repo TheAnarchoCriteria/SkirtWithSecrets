@@ -1,7 +1,7 @@
 const resources_ru = {
   pageTitle: "Manifesto",
   logoAlt: "Логотип бренда",
-  productName: "Юбка с секретами",
+  productName: "Юбка С Секретами",
   imageAlt: "Фото товара",
   menuItems: [
     "Код продукта",

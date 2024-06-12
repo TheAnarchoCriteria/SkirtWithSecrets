@@ -1,7 +1,7 @@
 const resources_ca = {
   pageTitle: "Manifesto",
   logoAlt: "Logotip de la marca",
-  productName: "Faldilla amb secrets",
+  productName: "Faldilla Amb Secrets",
   imageAlt: "Foto de l'article",
   menuItems: [
     "Codi del producte",

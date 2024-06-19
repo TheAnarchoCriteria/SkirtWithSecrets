@@ -8,7 +8,7 @@ const resources_en = {
     "Materials",
     "Care instructions",
     "Product journey",
-    "Digital Collectibles",
+    "Why do I need a Blockchain Passport?",
     "Contact Me"
   ],
   info1: [
@@ -29,11 +29,11 @@ const resources_en = {
     "Dry Clean with Tetrachloroethylene"
   ],
   info4: [
-    "Step 1. Origin of textiles",
-    "Step 2. Textile Interventions",
-    "Step 3. Tailoring",
-    "Step 4. Quality control",
-    "Step 5. Labeling and packaging"
+    "Step 1. Fiber: Anantapur, India",
+    "Step 2. Dye:   Karnataka, India",
+    "Step 3. Tailoring: Barcelona, España",
+    "Step 4. Quality control: Barcelona, España",
+    "Step 5. Labeling and packaging: Barcelona, España"
   ],
   info5: [
     "Authenticity",

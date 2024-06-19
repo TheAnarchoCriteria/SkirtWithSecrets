@@ -1,24 +1,24 @@
 const resources_es = {
-  pageTitle: "Manifesto",
+  pageTitle: "Manifiesto",
   logoAlt: "Logo de la marca",
-   productName: "Skirt With Secrets",
+  productName: "Skirt With Secrets",
   imageAlt: "Foto del artículo",
   menuItems: [
     "Código del producto",
     "Materiales",
     "Instrucciones de cuidado",
-    "Trayectoria del producto",
-    "Coleccionables digitales",
+    "Recorrido del producto",
+    "¿Por qué necesito un pasaporte Blockchain?",
     "Contáctame"
   ],
   info1: [
     "M-0001010",
-    "Subido a la blockchain: 21/03/2024",
-    "ID de la transacción en blockchain:",
+    "Cargado en la blockchain: 21/03/2024",
+    "ID de transacción de blockchain:",
     "44e25bc0ed840f9bf0e58d6227db15192d5b89e79ba4304da16b09703f68ceaf"
   ],
   info2: [
-    "Tela: 80% Seda Ahimsa, 20% Poliéster.",
+    "Tejido: 80% Seda Ahimsa, 20% Poliéster.",
     "Forro: 100% Seda Ahimsa."
   ],
   info3: [
@@ -29,11 +29,11 @@ const resources_es = {
     "Limpieza en seco con tetracloroetileno"
   ],
   info4: [
-    "Paso 1. Origen de los textiles",
-    "Paso 2. Intervenciones textiles",
-    "Paso 3. Confección",
-    "Paso 4. Control de calidad",
-    "Paso 5. Etiquetado y embalaje"
+    "Paso 1. Fibra: Anantapur, India",
+    "Paso 2. Tinte: Karnataka, India",
+    "Paso 3. Confección: Barcelona, España",
+    "Paso 4. Control de calidad: Barcelona, España",
+    "Paso 5. Etiquetado y embalaje: Barcelona, España"
   ],
   info5: [
     "Autenticidad",
@@ -43,13 +43,12 @@ const resources_es = {
     "Reventa y transferencia de propiedad"
   ],
   contactForm: {
-    emailPlaceholder: "Tu Email",
-    messagePlaceholder: "Tu Mensaje",
+    emailPlaceholder: "Tu correo electrónico",
+    messagePlaceholder: "Tu mensaje",
     sendButton: "Enviar",
     cancelButton: "Cancelar"
   },
-  contactSuccess: "Correo enviado con éxito!",
-  contactError: "Error al enviar el correo. Inténtalo de nuevo.",
-  welcomeMessage: "Bienvenido a The Anarcho Criteria"
-
+  contactSuccess: "¡Correo enviado con éxito!",
+  contactError: "Error al enviar el correo. Por favor, inténtalo de nuevo.",
+  welcomeMessage: "Welcome to The Anarcho Criteria"
 };
